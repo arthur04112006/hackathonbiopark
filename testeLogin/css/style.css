@@ -1,0 +1,42 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 1000;
+}
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+    background-color: #f0f0f0;
+    transition: 0.7s;
+}
+nav li {
+    list-style: none;
+}nav ul li {
+    display: inline-block;
+}
+.exessao_nav {
+    position: relative;
+    margin-left: 100%;
+}
