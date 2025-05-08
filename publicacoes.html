@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigos Aprovados - HeadSubmit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/logoaba.jpg">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>HeadSubmit</h1>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="publicacoes.html">Artigos</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html"><button class="login">Login</button></a>
+                <a href="cadastro.html"><button class="criar-conta">Criar Conta</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Artigos Aprovados e Publicados</h2>
+        <p>Explore os trabalhos científicos já avaliados e aprovados pela plataforma HeadSubmit.</p>
+        <div class="cta">
+            <a href="submissao.html"><button class="submeter">Submeter Novo Artigo</button></a>
+            <a href="eventos.html"><button class="ver-eventos">Ver Eventos</button></a>
+        </div>
+    </section>
+
+    <section class="publicacoes">
+        <h2>Artigos Publicados</h2>
+
+        <div class="filtros">
+            <input type="text" id="filtroAutor" placeholder="Filtrar por autor">
+            <input type="text" id="filtroArea" placeholder="Filtrar por área temática">
+            <button onclick="filtrar()">Filtrar</button>
+            <button onclick="limparFiltros()">Limpar Filtros</button>
+        </div>
+
+        <div class="artigos">
+            <!-- Aqui serão exibidos os artigos aprovados -->
+            <div class="artigo-card">
+                <h3>Artigo sobre Inteligência Artificial</h3>
+                <p><strong>Autor:</strong> João Silva</p>
+                <p><strong>Área Temática:</strong> Tecnologia</p>
+                <a href="detalhes-artigo.html">
+                    <button class="ver-artigo">Ver Detalhes</button>
+                </a>
+            </div>
+
+            <div class="artigo-card">
+                <h3>Pesquisa sobre Biotecnologia</h3>
+                <p><strong>Autor:</strong> Maria Oliveira</p>
+                <p><strong>Área Temática:</strong> Ciências Biológicas</p>
+                <a href="detalhes-artigo.html">
+                    <button class="ver-artigo">Ver Detalhes</button>
+                </a>
+            </div>
+
+            <!-- Exemplo de artigo com link -->
+            <div class="artigo-card">
+                <h3>Estudo sobre Sustentabilidade no Meio Ambiente</h3>
+                <p><strong>Autor:</strong> Carlos Pereira</p>
+                <p><strong>Área Temática:</strong> Meio Ambiente</p>
+                <a href="detalhes-artigo.html">
+                    <button class="ver-artigo">Ver Detalhes</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-col">
+            <h3><span class="icon">🎓</span> HeadSubmit</h3>
+            <p>Plataforma especializada em gerenciamento de submissões acadêmicas e eventos científicos.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Recursos Principais</h4>
+            <ul>
+              <li>✓ Submissão de Artigos</li>
+              <li>✓ Avaliação Duplo-cega</li>
+              <li>✓ Publicação Digital</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Eventos Apoiados</h4>
+            <ul>
+              <li>📅 Semana Científica</li>
+              <li>📅 Simpósio de Inovação</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contato</h4>
+            <div class="social-icons">
+              <a href="#">LinkedIn</a>
+              <a href="#">Twitter</a>
+              <a href="#">Facebook</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2025 HeadSubmit. Todos os direitos reservados.</p>
+          <div class="footer-links">
+            <a href="#">Termos de Uso</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Suporte</a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Submeter Artigo - HeadSubmit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/logoaba.jpg">
+</head>
+<body>
+    <section class="form-container">
+        <h2>Submissão de Artigo</h2>
+        <form id="submissaoForm" enctype="multipart/form-data">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" required>
+
+            <label for="autores">Autores:</label>
+            <input type="text" id="autores" required>
+
+            <label for="resumo">Resumo:</label>
+            <textarea id="resumo" required></textarea>
+
+            <label for="palavras">Palavras-chave:</label>
+            <input type="text" id="palavras" required>
+
+            <label for="area">Área Temática:</label>
+            <input type="text" id="area" required>
+
+            <label for="autor">Nome do Autor Responsável:</label>
+            <input type="text" id="autor" required>
+
+            <!-- Botão para upload do banner -->
+            <label for="banner">Banner Apresentativo:</label>
+            <input type="file" id="banner" name="banner" accept="image/*" required>
+
+            <!-- Botão para upload do artigo -->
+            <label for="artigo">Insira o Artigo (PDF):</label>
+            <input type="file" id="artigo" name="artigo" accept="application/pdf" required>
+
+            <button type="submit">Submeter</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

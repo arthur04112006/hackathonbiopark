@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel do Avaliador - Upload de Artigo Corrigido</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/logoaba.jpg">
+</head>
+<body>
+    <section class="painel-avaliador">
+        <h2>Upload de Artigo Corrigido e Comentários</h2>
+        <div class="artigo-card">
+            <h3>Título do Artigo</h3>
+            <p><strong>Área:</strong> Ciência de Dados</p>
+
+            <form class="form-avaliacao" action="http://localhost:5000/upload-corrigido" method="POST" enctype="multipart/form-data">
+                <label for="upload">Carregar PDF Corrigido:</label>
+                <input type="file" id="upload" name="arquivo" accept="application/pdf" required>
+
+                <div class="comentarios">
+                    <h4>Comentários</h4>
+                    <textarea id="comentario_autor" name="comentario_autor" required></textarea>
+                </div>
+
+                <button type="submit">Enviar Artigo Corrigido</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
